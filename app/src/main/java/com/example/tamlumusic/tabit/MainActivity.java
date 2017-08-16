@@ -102,8 +102,10 @@ public class MainActivity extends AppCompatActivity
     }
 
     public void about(){
-        TextView textView = (TextView) findViewById(R.id.About);
-        textView.setText("About");
+        TextView textView = (TextView) findViewById(R.id.AboutTitle);
+        textView.setText("About us");
 
+        TextView textView = (TextView) findViewById(R.id.AboutDescription);
+        textView.setText("By: James Zeng, Tam Lu, Dennis Li, and Thomas Huynh");
     }
 }
