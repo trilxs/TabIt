@@ -1,5 +1,6 @@
 package com.example.tamlumusic.tabit;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -85,6 +86,9 @@ public class MainActivity extends AppCompatActivity
         if (id == R.id.nav_camera) {
             // Handle the camera action
         } else if (id == R.id.nav_gallery) {
+            Intent video_page = new Intent (this, Videos.class);
+
+            startActivity(video_page);
 
         } else if (id == R.id.nav_slideshow) {
 
@@ -102,10 +106,10 @@ public class MainActivity extends AppCompatActivity
     }
 
     public void about(){
-        TextView textView = (TextView) findViewById(R.id.AboutTitle);
-        textView.setText("About us");
+        TextView AboutTitle = (TextView) findViewById(R.id.AboutTitle);
+        AboutTitle.setText("About us");
 
-        TextView textView = (TextView) findViewById(R.id.AboutDescription);
-        textView.setText("By: James Zeng, Tam Lu, Dennis Li, and Thomas Huynh");
+        TextView AboutDescription = (TextView) findViewById(R.id.AboutDescription);
+        AboutDescription.setText("By: James Zeng, Tam Lu, Dennis Li, and Thomas Huynh");
     }
 }
